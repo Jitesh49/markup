@@ -1,7 +1,7 @@
 GitHub Markup
 =============
 
-This library is the **first step** of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
+This library is the **first step** of a journey that every markup file in a repository goes on before it is rendered on GitHub.com :
 
 1. `github-markup` selects an _underlying library_ to convert the raw markup to HTML. See the list of [supported markup formats](#markups) below.
 1. The HTML is sanitized, aggressively removing things that could harm you and your kin—such as `script` tags, inline-styles, and `class` or `id` attributes.
@@ -48,7 +48,7 @@ from this directory.
 Usage
 -----
 
-Basic form:
+Basic form :
 
 ```ruby
 require 'github/markup'
@@ -56,7 +56,7 @@ require 'github/markup'
 GitHub::Markup.render('README.markdown', "* One\n* Two")
 ```
 
-More realistic form:
+More realistic form :
 
 ```ruby
 require 'github/markup'
@@ -64,7 +64,7 @@ require 'github/markup'
 GitHub::Markup.render(file, File.read(file))
 ```
 
-And a convenience form:
+And a convenience form :
 
 ```ruby
 require 'github/markup'
